@@ -1,0 +1,1 @@
+global.seconds_passed = 0;
