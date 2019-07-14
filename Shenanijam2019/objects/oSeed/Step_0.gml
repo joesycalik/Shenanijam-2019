@@ -62,5 +62,6 @@ if (vsp <= 0 && hsp <= 0 && throw_dir > 0) {
 }
 
 if (resting) {
-	dead = false;	
+	dead = false;
+	global.game_over = true;	
 }

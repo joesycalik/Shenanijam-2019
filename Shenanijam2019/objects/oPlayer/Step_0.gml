@@ -95,3 +95,7 @@ if (iframes > 0) {
 else {
 	iframes = 0;
 }
+
+if (hp == 0) {
+	global.game_over = true;	
+}
