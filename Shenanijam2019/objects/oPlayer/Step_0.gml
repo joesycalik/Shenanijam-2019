@@ -1,9 +1,11 @@
 key_left = keyboard_check(ord("A"));
 key_right = keyboard_check(ord("D"));
 key_jump = keyboard_check_pressed(vk_space);
-key_drop = keyboard_check_released(ord("E"));
-key_fire = keyboard_check_pressed(ord("J"));
-key_dash = keyboard_check_pressed(ord("F"));
+//key_drop = keyboard_check_released(ord("E"));
+key_fire = keyboard_check_released(ord("J"));
+key_aim = keyboard_check_pressed(ord("J"));
+//key_dash = keyboard_check_pressed(ord("F"));
+key_dive = keyboard_check_pressed(ord("F"));
 
 var move = key_right - key_left;
 
@@ -15,16 +17,19 @@ else if (move < 0 && image_xscale > 0) {
 }
 
 dash = 1;
-if (key_dash) {
-	dash = 1.25;	
-}
+//if (key_dash) {
+//	dash = 20;	
+//}
 
 hsp = move * (walksp * dash);
 
-vsp = (vsp * dash) + grv;
+vsp = (vsp) + grv;
 
 if (key_jump) {
 	vsp = -10;
+}
+else if (key_dive) {
+	vsp = 15;	
 }
 
 var bbox_side;
@@ -46,7 +51,7 @@ if (tilemap_get_at_pixel(global.tilemap, bbox_side + ceil(hsp), bbox_top) != 0) 
 	hsp = 0;
 }
 
-x = x + hsp + (sign(hsp) * key_dash * 10);
+x = x + hsp;// + (sign(hsp) * key_dash * 10);
 
 // Vertical Collision
 //if (place_meeting(x, y + vsp, oGround)) {
@@ -68,7 +73,7 @@ if (tilemap_get_at_pixel(global.tilemap, bbox_left, bbox_side + altered_vsp) != 
 	vsp = 0;
 }
 
-y = y + vsp + (sign(vsp) * key_dash * 100);
+y = y + vsp;// + (sign(vsp) * key_dash * 100);
 
 //if (holding_seed && key_drop) {
 	//holding_seed = false;
@@ -76,9 +81,16 @@ y = y + vsp + (sign(vsp) * key_dash * 100);
 	//instance_create_depth(x, y, 0, oSeed);	
 //}
 
+if (key_aim) {
+	aiming = true;
+	sprite_index = spr_bird_tilted;
+}
+
 if (holding_seed && key_fire) {
+	aiming = false;
+	sprite_index = spr_bird;
 	holding_seed = false;
-	//sprite_index = spr_bird_without_seed;
+	
 	var new_seed = instance_create_depth(x, y, 0, oSeed);
 	new_seed.resting = false;
 	if (image_xscale > 0) {
@@ -97,5 +109,6 @@ else {
 }
 
 if (hp == 0) {
-	global.game_over = true;	
+	global.game_over = true;
+	instance_destroy();
 }

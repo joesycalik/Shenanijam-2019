@@ -5,3 +5,5 @@ throw_dir = 0;
 
 resting = true;
 dead = false;
+
+depth = -1;
