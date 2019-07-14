@@ -1,5 +1,2 @@
-#macro BODY_COUNT 1
-#macro EYE_COUNT 1
-#macro MOUTH_COUNT 2
-#macro SIDE_COUNT 1
-#macro TAIL_COUNT 1
+#macro THROW_SPEED 15
+#macro THROW_SPEED_DECREMENT_STEP 0.15

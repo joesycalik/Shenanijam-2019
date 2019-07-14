@@ -1,6 +1,10 @@
-move_speed = 600;
+hsp = 0;
+vsp = 0;
+grv = 0.4;
+walksp = 6;
 
-movement_inputs[0] = ord("D");
-movement_inputs[1] = ord("W");
-movement_inputs[2] = ord("A");
-movement_inputs[3] = ord("S");
+holding_seed = true;
+
+hp = 3;
+
+iframes = 0;
