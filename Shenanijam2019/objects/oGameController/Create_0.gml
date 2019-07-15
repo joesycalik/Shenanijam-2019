@@ -20,3 +20,4 @@ audio_stop_all();
 audio_play_sound(snd_music_1, -1, true);
 
 end_screen_spawned = false;
+

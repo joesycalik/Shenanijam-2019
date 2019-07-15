@@ -1,4 +1,5 @@
 if (!other.resting && !other.dead) {
+	audio_play_sound(snd_impact, -1, false);
 	audio_play_sound(death_sounds[irandom_range(0, 3)], 0, false);
 	with (other) {
 		//instance_destroy();

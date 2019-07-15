@@ -37,7 +37,5 @@ if (global.enemies_killed_this_wave == global.wave_enemies) {
 
 if (global.game_over && !end_screen_spawned) {
 	end_screen_spawned = true;
-	audio_pause_sound(snd_music_1);
-	audio_play_sound(snd_game_over, 0, false);
 	instance_create_depth(0, 0, 0, oEnd_Screen);	
 }

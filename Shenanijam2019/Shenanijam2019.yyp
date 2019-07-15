@@ -319,6 +319,14 @@
             }
         },
         {
+            "Key": "63ca16ef-1f34-4eb9-9d96-1dc97c0c4d8d",
+            "Value": {
+                "id": "ca9d39a4-0dbd-4907-b497-65d72ca54846",
+                "resourcePath": "sprites\\Untitled_Artwork\\Untitled_Artwork.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "6b454c29-2835-459f-b584-bab9c8e7dfe0",
             "Value": {
                 "id": "9f476ccc-07b1-438f-b506-692c1b107d95",
@@ -364,6 +372,14 @@
                 "id": "ead2082d-8013-46d0-90dd-0adc14f73947",
                 "resourcePath": "objects\\oSquirrel\\oSquirrel.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "7b37dc2d-1012-443b-b57d-266dd35e91c5",
+            "Value": {
+                "id": "56e0b281-4b85-427e-9e32-611db01e9291",
+                "resourcePath": "sounds\\snd_impact\\snd_impact.yy",
+                "resourceType": "GMSound"
             }
         },
         {
@@ -559,6 +575,14 @@
             }
         },
         {
+            "Key": "d3b5faaf-eb59-4cd1-b34f-7538bb9b7d06",
+            "Value": {
+                "id": "d8d4c815-45b9-481a-a9a2-87c143488eb5",
+                "resourcePath": "objects\\oAudio\\oAudio.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "d56fb818-262b-40de-a0a3-75c120d8a114",
             "Value": {
                 "id": "f6fd88b7-a077-41e8-9b22-ef11d44c760f",
@@ -612,6 +636,14 @@
                 "id": "d2c3b369-642a-42db-9057-1055c46eab43",
                 "resourcePath": "objects\\oGameController\\oGameController.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "f9ba2b62-2ce4-4b68-a6d4-0f424fcdf175",
+            "Value": {
+                "id": "e2a0f152-60fc-423b-b82f-19325c7200e2",
+                "resourcePath": "sounds\\snd_title_music\\snd_title_music.yy",
+                "resourceType": "GMSound"
             }
         }
     ],
