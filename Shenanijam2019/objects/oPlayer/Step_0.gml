@@ -26,10 +26,13 @@ hsp = move * (walksp * dash);
 vsp = (vsp) + grv;
 
 if (key_jump) {
-	vsp = -10;
+	audio_play_sound(snd_wing_flap, 0, false);
+	vsp = -15;
+	grounded = false;
+	sprite_index = spr_flying_bird;	
 }
 else if (key_dive) {
-	vsp = 15;	
+	vsp = 20;	
 }
 
 var bbox_side;
@@ -46,8 +49,8 @@ var bbox_side;
 if (hsp > 0) bbox_side = bbox_right; else bbox_side = bbox_left;
 if (tilemap_get_at_pixel(global.tilemap, bbox_side + ceil(hsp), bbox_top) != 0) ||
 	(tilemap_get_at_pixel(global.tilemap, bbox_side + ceil(hsp), bbox_bottom) != 0) {
-	if (hsp > 0) x = x - (x mod 64) + 63 - (bbox_right - x);
-	else x = x - (x mod 64) - (bbox_left - x);
+	if (hsp > 0) x = x - (x mod 128) + 127 - (bbox_right - x);
+	else x = x - (x mod 128) - (bbox_left - x);
 	hsp = 0;
 }
 
@@ -68,8 +71,12 @@ if (altered_vsp > 0) altered_vsp = ceil(altered_vsp) else altered_vsp = floor(al
 if (vsp > 0) bbox_side = bbox_bottom; else bbox_side = bbox_top;
 if (tilemap_get_at_pixel(global.tilemap, bbox_left, bbox_side + altered_vsp) != 0) ||
 	(tilemap_get_at_pixel(global.tilemap, bbox_right, bbox_side + altered_vsp) != 0) {
-	if (vsp > 0) y = y - (y mod 64) + 63 - (bbox_bottom - y);
-	else y = y - (y mod 64) - (bbox_top - y);
+	if (!grounded) {
+		walking_anim_timer = 0;
+	}
+	grounded = true;
+	if (vsp > 0) y = y - (y mod 128) + 127 - (bbox_bottom - y);
+	else y = y - (y mod 128) - (bbox_top - y);
 	vsp = 0;
 }
 
@@ -87,6 +94,7 @@ if (key_aim) {
 }
 
 if (holding_seed && key_fire) {
+	audio_play_sound(snd_wrench_wooshing, 0, false);
 	aiming = false;
 	sprite_index = spr_bird;
 	holding_seed = false;
@@ -112,3 +120,20 @@ if (hp == 0) {
 	global.game_over = true;
 	instance_destroy();
 }
+
+if (grounded && walking_sprite == 0 && walking_anim_timer <= 0 && hsp != 0) {
+	sprite_index = spr_bird_walking_2;
+	walking_sprite = 1;
+	audio_play_sound(snd_walk_patter, 0, false);
+}
+else if (grounded && walking_sprite == 1 && walking_anim_timer <= 0 && hsp != 0) {
+	sprite_index = spr_bird_walking_1;
+	walking_sprite = 0;
+	audio_play_sound(snd_walk_patter, 0, false);
+}
+
+if (walking_anim_timer <= 0) {
+	walking_anim_timer = 0.1;	
+}
+
+walking_anim_timer -= 1 * global.seconds_passed;

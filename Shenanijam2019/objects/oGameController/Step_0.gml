@@ -27,14 +27,17 @@ else {
 
 if (global.enemies_killed_this_wave == global.wave_enemies) {
 	global.wave_num++;
-	global.wave_enemies += 3;
+	global.wave_enemies += 6;
 	global.enemies_killed_this_wave = 0;
 	global.enemies_spawned_this_wave = 0;
-	if (global.max_enemy_speed < 8) global.max_enemy_speed += 0.5
-	else global.max_enemy_speed = 8;
+	if (global.max_enemy_speed < 10) global.max_enemy_speed += 0.5
+	else global.max_enemy_speed = 10;
 }
 
 
-if (global.game_over) {
+if (global.game_over && !end_screen_spawned) {
+	end_screen_spawned = true;
+	audio_pause_sound(snd_music_1);
+	audio_play_sound(snd_game_over, 0, false);
 	instance_create_depth(0, 0, 0, oEnd_Screen);	
 }

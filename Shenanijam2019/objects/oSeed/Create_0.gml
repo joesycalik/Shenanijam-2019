@@ -7,3 +7,5 @@ resting = true;
 dead = false;
 
 depth = -1;
+
+angle = 0;

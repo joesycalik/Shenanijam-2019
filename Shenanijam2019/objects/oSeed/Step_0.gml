@@ -1,3 +1,8 @@
+
+if (!resting) {
+	angle += 10;	
+}
+
 vsp = vsp + reg_grv;	
 
 // Vertical Collision
@@ -16,8 +21,8 @@ if (vsp > 0) bbox_side = bbox_bottom; else bbox_side = bbox_top;
 if (tilemap_get_at_pixel(global.tilemap, bbox_left, bbox_side + altered_vsp) != 0) ||
 	(tilemap_get_at_pixel(global.tilemap, bbox_right, bbox_side + altered_vsp) != 0) {
 	throwsp--;
-	if (vsp > 0) y = y - (y mod 64) + 63 - (bbox_bottom - y);
-	else y = y - (y mod 64) - (bbox_top - y);
+	if (vsp > 0) y = y - (y mod 128) + 127 - (bbox_bottom - y);
+	else y = y - (y mod 128) - (bbox_top - y);
 	vsp = 0;
 }
 
@@ -46,8 +51,8 @@ if (hsp > 0) bbox_side = bbox_right; else bbox_side = bbox_left;
 if (tilemap_get_at_pixel(global.tilemap, bbox_side + ceil(hsp), bbox_top) != 0) ||
 	(tilemap_get_at_pixel(global.tilemap, bbox_side + ceil(hsp), bbox_bottom) != 0) {
 	throwsp = 0;
-	if (hsp > 0) x = x - (x mod 64) + 63 - (bbox_right - x);
-	else x = x - (x mod 64) - (bbox_left - x);
+	if (hsp > 0) x = x - (x mod 128) + 127 - (bbox_right - x);
+	else x = x - (x mod 128) - (bbox_left - x);
 	hsp = 0;
 }
 

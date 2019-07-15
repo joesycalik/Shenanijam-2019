@@ -55,6 +55,22 @@
             }
         },
         {
+            "Key": "0f4464a5-f4d7-44f0-9912-191057b83cee",
+            "Value": {
+                "id": "0edc198e-6ae7-422d-999a-bcf78db4dc77",
+                "resourcePath": "fonts\\fnt_small\\fnt_small.yy",
+                "resourceType": "GMFont"
+            }
+        },
+        {
+            "Key": "1097125a-66f6-41fe-ae04-2d4fa35b3ec3",
+            "Value": {
+                "id": "4770ee8d-2f7b-4112-b38b-f45831364b7d",
+                "resourcePath": "sprites\\spr_walking_wrench_2\\spr_walking_wrench_2.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "15937bc9-bf1c-4b2d-95f9-68fc88998a89",
             "Value": {
                 "id": "118a3616-1cf4-4f4c-b82d-226177b416d1",
@@ -68,6 +84,14 @@
                 "id": "10301206-79b1-4b8b-9b7b-98da37d2fe8b",
                 "resourcePath": "views\\159bd0b6-439d-4a15-b32f-0acae34497d8.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "176324eb-6290-4ace-b216-a576e01012c8",
+            "Value": {
+                "id": "d8d2d04b-1780-4039-afd3-07b405adfbaf",
+                "resourcePath": "sounds\\snd_squirrel_death_4\\snd_squirrel_death_4.yy",
+                "resourceType": "GMSound"
             }
         },
         {
@@ -151,6 +175,70 @@
             }
         },
         {
+            "Key": "3128c6e0-f110-41f9-8d1c-c2230415f9a9",
+            "Value": {
+                "id": "cdf14e5a-f410-4f10-91ea-4452ad5e494b",
+                "resourcePath": "sprites\\spr_bird_walking_2\\spr_bird_walking_2.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "38a7f784-c2fb-409c-83a2-8334527c49ec",
+            "Value": {
+                "id": "bbd98f47-ea96-4a6c-8075-affb8d505117",
+                "resourcePath": "objects\\oMain_Menu\\oMain_Menu.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "3b137748-4057-445a-a660-ababee48483e",
+            "Value": {
+                "id": "4e098161-e4af-4f48-8244-f62939714581",
+                "resourcePath": "sounds\\snd_squirrel_death_2\\snd_squirrel_death_2.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "3b4a47f6-b5ec-4abd-9855-54267b07d5af",
+            "Value": {
+                "id": "c8c2bb6f-42d4-443d-ad5b-193ce8875d17",
+                "resourcePath": "rooms\\room_0\\room_0.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "3b5cacf9-8a59-423b-b06b-3d456a32d06b",
+            "Value": {
+                "id": "c3fe6024-cbeb-438b-b1c3-ff6c0b8f7cd1",
+                "resourcePath": "sounds\\snd_music_1\\snd_music_1.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "43c3a84b-384d-4b86-a81d-8c7e04741e8e",
+            "Value": {
+                "id": "482dcffb-7337-47c2-93d9-7e50ea3e34e3",
+                "resourcePath": "sounds\\snd_squirrel_scratch\\snd_squirrel_scratch.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "480c52a3-4997-4d2f-b497-b6c68af37b7e",
+            "Value": {
+                "id": "ba9613eb-8796-4775-8922-ed3067b1fca8",
+                "resourcePath": "sprites\\spr_bird_walking_1\\spr_bird_walking_1.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "4ce8ddf6-befc-49b1-94a0-18c9cecc5028",
+            "Value": {
+                "id": "2426ca2c-5f5f-4591-829e-894af0874587",
+                "resourcePath": "rooms\\room_controls\\room_controls.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "4f9b05a3-2670-4d74-a01d-b1cea9c7b7a3",
             "Value": {
                 "id": "29d4ee4d-c91a-4431-a67f-bede975d1fd9",
@@ -223,6 +311,14 @@
             }
         },
         {
+            "Key": "62e7072f-ec24-463d-a075-688798e589da",
+            "Value": {
+                "id": "0ee766ee-a14b-442d-8749-ef691f9caa81",
+                "resourcePath": "objects\\oControls\\oControls.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "6b454c29-2835-459f-b584-bab9c8e7dfe0",
             "Value": {
                 "id": "9f476ccc-07b1-438f-b506-692c1b107d95",
@@ -239,11 +335,27 @@
             }
         },
         {
+            "Key": "77e0343b-c057-4f57-9fa2-324172d22ce3",
+            "Value": {
+                "id": "52e83cfa-c310-430e-9cfc-39069d18034c",
+                "resourcePath": "objects\\oSplatter\\oSplatter.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "781adfad-1e60-4ff2-bd17-228839dd9094",
             "Value": {
                 "id": "04178d2a-8845-4039-bae1-23145c65752c",
                 "resourcePath": "sprites\\spr_sky_5\\spr_sky_5.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "78f65371-6523-4314-8fa8-d36c4ef21be3",
+            "Value": {
+                "id": "22434436-87c2-4c3d-ba70-8477f692e3c1",
+                "resourcePath": "sounds\\snd_wrench_wooshing\\snd_wrench_wooshing.yy",
+                "resourceType": "GMSound"
             }
         },
         {
@@ -279,11 +391,43 @@
             }
         },
         {
+            "Key": "916297f9-17f7-4470-a98a-8b5fa2bc1c05",
+            "Value": {
+                "id": "706ca0ac-275f-4051-8c57-dcb677b915b5",
+                "resourcePath": "sprites\\spr_squirrel_twisted\\spr_squirrel_twisted.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "991cbfbb-a45e-4ca3-ac30-47b62b4124a6",
+            "Value": {
+                "id": "01828778-b97e-44a9-971f-f32d97acba4a",
+                "resourcePath": "sounds\\snd_squirrel_growl\\snd_squirrel_growl.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "9a5fb0c3-c80b-4db6-8e10-9151837cf5aa",
             "Value": {
                 "id": "f350ff97-cad3-4c27-b2e6-cdfc907b9639",
                 "resourcePath": "sprites\\spr_sky_2\\spr_sky_2.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "a2f06347-e866-400d-947f-10031ba541a3",
+            "Value": {
+                "id": "268d2920-3fe1-4bfd-a9b8-879ec6886bb5",
+                "resourcePath": "sounds\\snd_squirrel_death_1\\snd_squirrel_death_1.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "a446c919-cc31-4b53-a014-1904e98b16ff",
+            "Value": {
+                "id": "44b073ec-45b2-4269-9de2-59196f37071d",
+                "resourcePath": "sounds\\snd_walk_patter\\snd_walk_patter.yy",
+                "resourceType": "GMSound"
             }
         },
         {
@@ -338,7 +482,7 @@
             "Key": "b49a8a54-f825-42fb-9c7b-8ee0dd51abcc",
             "Value": {
                 "id": "d760cbd3-5de0-4da8-81ac-bcfc1e0593d5",
-                "resourcePath": "rooms\\room0\\room0.yy",
+                "resourcePath": "rooms\\game_room\\game_room.yy",
                 "resourceType": "GMRoom"
             }
         },
@@ -356,6 +500,30 @@
                 "id": "28742762-3d15-41e3-8359-693e4dbe977d",
                 "resourcePath": "sprites\\spr_sky_1\\spr_sky_1.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "c0cb72c5-6fa8-41df-a62f-5d7c2cb9c588",
+            "Value": {
+                "id": "08793396-beed-4759-a8fb-3e48401502a2",
+                "resourcePath": "sprites\\spr_walking_wrench_1\\spr_walking_wrench_1.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "c61f10ea-2a77-48ae-89ac-791fddbd46ed",
+            "Value": {
+                "id": "334f02dc-4fef-4421-9974-1f299005ae0a",
+                "resourcePath": "sounds\\snd_wing_flap\\snd_wing_flap.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "ca803545-8e24-48ce-9d9d-d1d6fbbf207a",
+            "Value": {
+                "id": "8bd91863-74c5-4b55-a7a4-434fece9e4e4",
+                "resourcePath": "sounds\\snd_squirrel_death_3\\snd_squirrel_death_3.yy",
+                "resourceType": "GMSound"
             }
         },
         {
@@ -388,6 +556,14 @@
                 "id": "0bbc6f42-b635-48fe-a5e5-123a2cb3a9cc",
                 "resourcePath": "views\\d347f44d-0677-40cf-9f61-ac151b1928b0.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "d56fb818-262b-40de-a0a3-75c120d8a114",
+            "Value": {
+                "id": "f6fd88b7-a077-41e8-9b22-ef11d44c760f",
+                "resourcePath": "sounds\\snd_game_over\\snd_game_over.yy",
+                "resourceType": "GMSound"
             }
         },
         {
