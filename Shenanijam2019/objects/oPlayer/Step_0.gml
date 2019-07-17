@@ -94,6 +94,10 @@ if (key_aim) {
 }
 
 if (holding_seed && key_fire) {
+	if (alarm[0] == -1) {
+		just_thrown = true;
+		alarm[0] = 15;
+	}
 	audio_play_sound(snd_wrench_wooshing, 0, false);
 	aiming = false;
 	sprite_index = spr_bird;

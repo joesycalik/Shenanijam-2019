@@ -1,4 +1,4 @@
-if (keyboard_check(ord("K")) && !holding_seed) {
+if (!holding_seed && !just_thrown) {
 	
 	holding_seed = true;
 	//sprite_index = spr_bird_with_seed;

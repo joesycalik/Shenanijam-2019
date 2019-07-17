@@ -17,3 +17,5 @@ aiming = false;
 grounded = false;
 walking_sprite = 0;
 walking_anim_timer = 0.1;
+
+just_thrown = false;
